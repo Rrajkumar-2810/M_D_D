@@ -90,6 +90,39 @@ nav ul li a:hover {
     display: block !important;
 }
 
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    margin: 10px 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Hide the abbr text on mobile screens */
+@media (max-width: 768px) {
+    .btn-text {
+        display: none;
+    }
+
+    .download-btn {
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+
 /* Sections */
 section {
     padding: 20px;
