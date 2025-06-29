@@ -185,6 +185,26 @@ section {
     transform: scale(1.1);
 }
 
+#charcoal-louver {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#charcoal-louver img {
+    margin: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#charcoal-louver img:hover {
+    transform: scale(1.1);
+}
+
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
