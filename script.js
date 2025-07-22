@@ -40,6 +40,18 @@ document.querySelectorAll('.video-thumb').forEach(video => {
     });
 });
 
+document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    const video = wrapper.querySelector('video');
+
+    wrapper.addEventListener('click', function () {
+        const modal = document.getElementById('videoModal');
+        const fullVideo = document.getElementById('fullVideo');
+
+        fullVideo.src = video.src;
+        modal.style.display = 'flex';
+    });
+});
+
 document.querySelector('.close-btn').addEventListener('click', function () {
     const modal = document.getElementById('videoModal');
     const fullVideo = document.getElementById('fullVideo');
